@@ -18,6 +18,11 @@ namespace FirstMVCApp.Controllers
             _logger = logger;
         }
 
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         [HttpGet]
         public ActionResult SayHello()
         {
@@ -47,11 +52,6 @@ namespace FirstMVCApp.Controllers
             model.GreetingSuffix = greeting;
 
             return View(model);
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
 
         public IActionResult Privacy()
