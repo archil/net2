@@ -19,7 +19,6 @@ namespace FirstMVCApp.Controllers
         {
             _logger = logger;
         }
-
         public ActionResult Index()
         {
             return View();
